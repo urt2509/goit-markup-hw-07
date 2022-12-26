@@ -563,10 +563,9 @@ img {
 .form-footer {
   display: flex;
   gap: 12px;
+  margin-left: auto;
   justify-content: center;
-
   align-items: flex-end;
-  margin-left: 93px;
 }
 
 .email-text {
