@@ -1,87 +1,12 @@
-html {
-  box-sizing: border-box;
-}
-
-:root {
-  --primary-text-color: #757575;
-  --secondary-text-color: #ffffff;
-  --accent-color: #2196f3;
-  --logo-text-color: #000000;
-  --primary-bcg-color: #ffffff;
-  --footer-text-color: rgba(255, 255, 255, 0.6);
-  --section-bcg-color: #f5f5f5;
-  --title-text-color: #212121;
-  --secondary-bcg-color: #2f303a;
-  --button-order-active: #188ce8;
-  --button-primary-shadow: rgba(0, 0, 0, 0.15);
-  --tertiary-bcg-color: #f5f4fa;
-  --icon-text: #afb1b8;
-  --border-color: #ececec;
-  --projects-border-color: #eeeeee;
-  --transition-time-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --modal-bcg-overlay-color: rgba(0, 0, 0, 0.2);
-  --work-label-bcg-color: rgba(47, 48, 58, 0.8);
-  --modal-button-border: rgba(0, 0, 0, 0.1);
-  --input-border-color: rgba(33, 33, 33, 0.2);
-  --form-comment-color: rgba(117, 117, 117, 0.5);
-  --footer-border-color: rgba(255, 255, 255, 0.3);
-}
-
-body {
-  margin: 0;
-  background-color: var(--primary-bcg-color);
-  color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
-}
-
-/* Utilities */
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  max-width: 100%;
-  height: auto;
-}
-
-img {
-  display: block;
-}
-
-.list {
-  display: flex;
-  margin: 0;
-  margin-left: auto;
-  padding-left: 0;
-  align-items: center;
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-  transition: color 250ms var(--transition-time-function);
-}
-
-.container {
+/* .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -92,39 +17,39 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
 
-.button {
+/* .button {
   display: inline-block;
   border-radius: 4px;
   border: transparent;
   padding: 10px 24px;
   min-width: 67px;
-  background-color: var(--accent-color);
-  color: var(--secondary-text-color);
+  background-color: $accentColor;
+  color: $secondaryTextColor);
   cursor: pointer;
   font-family: inherit;
   text-align: center;
-}
+} */
 
 /* Page header */
 
-.page-header {
-  border-bottom: 1px solid var(--border-color);
-}
+/* .page-header {
+  border-bottom: 1px solid $borderColor;
+} */
 
-.header-nav {
+/* .header-nav {
   display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
   align-items: center;
-}
+} */
 
 /* Logo */
-
+/* 
 .logo-accent {
   width: 145px;
-  color: var(--accent-color);
+  color: $accentColor;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -133,12 +58,12 @@ img {
 }
 
 .logo-text {
-  color: var(--logo-text-color);
-}
+  color: $logoTextColor;
+} */
 
 /* Navigation */
 
-.site-nav .item:first-child {
+/* .site-nav .item:first-child {
   margin-left: 93px;
 }
 
@@ -156,7 +81,7 @@ img {
 }
 
 .site-nav .link {
-  color: var(--title-text-color);
+  color: $titleTextColor);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -165,8 +90,8 @@ img {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-color);
-  transition: color 250ms var(--transition-time-function);
+  color: $accentColor;
+  transition: color 250ms $transitionTimeFunction;
 }
 
 .site-nav .link.current {
@@ -174,23 +99,23 @@ img {
   bottom: 0;
   left: 0;
   padding: 32px 0;
-  color: var(--accent-color);
+  color: $accentColor;
 }
 
 .site-nav .link.current:after {
   position: absolute;
   bottom: 0;
   left: 0;
-  content: '';
+  $tent: '';
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-color);
-}
+  background-color: $accentColor;
+} */
 
 /* Address */
-
-.header-nav .contact-item + .contact-item {
+/* 
+.header-nav .contact-item+.contact-item {
   margin-left: 40px;
 }
 
@@ -200,7 +125,7 @@ img {
   justify-content: center;
   align-items: center;
   min-width: 135px;
-  color: var(--primary-text-color);
+  color: $primaryTextColor;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -209,8 +134,8 @@ img {
 
 .contact:hover,
 .contact:focus {
-  color: var(--accent-color);
-  transition: color 250ms var(--transition-time-function);
+  color: $accentColor;
+  transition: color 250ms $transitionTimeFunction;
 }
 
 .contact-icon {
@@ -221,23 +146,21 @@ img {
 .contact-icon:hover,
 .contact-icon.focus {
   fill: currentColor;
-  transition: fill 250ms var(--transition-time-function);
-}
+  transition: fill 250ms $transitionTimeFunction;
+} */
 
 /* Hero */
 
-.section.hero {
+/* .section.hero {
   max-width: 1600px;
   max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+      rgba(47, 48, 58, 0.4)),
     url('../images/herobackpicture.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -245,8 +168,8 @@ img {
 }
 
 .hero {
-  background-color: var(--secondary-bcg-color);
-  color: var(--secondary-text-color);
+  background-color: $secondaryBcgColor;
+  color: $secondaryTextColor;
   text-align: center;
 }
 
@@ -256,15 +179,15 @@ img {
   margin-right: auto;
   margin-bottom: 30px;
   width: 696px;
-  color: var(--secondary-color);
+  color: $secondaryColor;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
+} */
 
-.button.primary {
+/* .button.primary {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -273,14 +196,14 @@ img {
 
 .button.primary:hover,
 .button.primary:focus {
-  background-color: var(--button-order-active);
-  transition: background-color 250ms var(--transition-time-function);
-  box-shadow: 0px 4px 4px var(--button-primary-shadow);
-}
+  background-color: $buttonOrderActive;
+  transition: background-color 250ms $transitionTimeFunction;
+  box-shadow: 0px 4px 4px $buttonPrimaryShadow;
+} */
 
 /* Features */
 
-.section {
+/* .section {
   padding: 94px 0;
 }
 
@@ -301,7 +224,7 @@ img {
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  background-color: var(--tertiary-bcg-color);
+  background-color: $tertiaryBcgColor;
 }
 
 .features-icon {
@@ -309,7 +232,7 @@ img {
 }
 
 .title {
-  color: var(--title-text-color);
+  color: $titleTextColor;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -318,7 +241,7 @@ img {
 
 .heading {
   margin-bottom: 50px;
-  color: var(--title-text-color);
+  color: $titleTextColor;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -328,11 +251,11 @@ img {
 .section-text {
   font-size: 14px;
   line-height: 1.71;
-}
+} */
 
 /* What we do */
 
-.work {
+/* .work {
   padding-top: 0;
 }
 
@@ -360,18 +283,18 @@ img {
   margin-bottom: 0;
   width: 100%;
   height: 70px;
-  color: var(--secondary-text-color);
-  background-color: var(--work-label-bcg-color);
+  color: $secondaryTextColor;
+  background-color: $workLabelBcgColor;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-}
+} */
 
 /* Team */
 
-.section.team {
-  background-color: var(--tertiary-bcg-color);
+/* .section.team {
+  background-color: $tertiaryBcgColor;
 }
 
 .team {
@@ -384,7 +307,7 @@ img {
 .team-card {
   flex-basis: calc((100% - 90px) / 4);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--primary-bcg-color);
+  background-color: $primaryBcgColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -422,8 +345,8 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  fill: var(--icon-text);
-  transition: fill 250ms var(--transition-time-function);
+  fill: $iconText;
+  transition: fill 250ms $transitionTimeFunction;
 }
 
 .team .social-item {
@@ -435,15 +358,15 @@ img {
 }
 
 .social-link:hover {
-  fill: var(--secondary-text-color);
-  background-color: var(--accent-color);
-  transition: background-color 250ms var(--transition-time-function),
-    fill 250ms var(--transition-time-function);
-}
+  fill: $secondaryTextColor;
+  background-color: $accentColor;
+  transition: background-color 250ms $transitionTimeFunction,
+    fill 250ms $transitionTimeFunction;
+} */
 
 /* Our clients */
 
-.clients {
+/* .clients {
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
@@ -459,27 +382,27 @@ img {
   padding: 16px 32px;
   width: 170px;
   height: 92px;
-  border: 1px solid var(--icon-text);
+  border: 1px solid $iconText;
   border-radius: 4px;
-  color: var(--icon-text);
+  color: $iconText;
 }
 
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
-  transition: border 250ms var(--transition-time-function),
-    color 250ms var(--transition-time-function);
+  border: 1px solid $accentColor;
+  color: $accentColor;
+  transition: border 250ms $transitionTimeFunction,
+    color 250ms $transitionTimeFunction;
 }
 
 .clients-icon {
   fill: currentColor;
-}
+} */
 
 /* Footer */
 
 .footer-bcg {
-  background-color: var(--secondary-bcg-color);
+  background-color: $secondaryBcgColor;
 }
 
 .footer {
@@ -491,7 +414,7 @@ img {
   display: block;
   margin-left: auto;
   min-width: 135px;
-  color: var(--primary-text-color);
+  color: $primaryTextColor;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -514,7 +437,7 @@ img {
 }
 
 .logo-item {
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
 }
 
 .contacts {
@@ -534,11 +457,11 @@ img {
 }
 
 .contact-map {
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
 }
 
 .contact.accent {
-  color: var(--footer-text-color);
+  color: $footerTextColor;
   letter-spacing: inherit;
 }
 
@@ -546,7 +469,7 @@ img {
 
 .social-footer {
   margin-left: 70px;
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
 }
 
 .social-text {
@@ -555,7 +478,7 @@ img {
 }
 
 .social-footer .social-link {
-  fill: var(--secondary-text-color);
+  fill: $secondaryTextColor;
 }
 
 /* Form footer Email input */
@@ -578,14 +501,15 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: inherit;
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
 }
 
 .form-email-text::placeholder {
   font-size: 16px;
   line-height: 1.25;
-  color: var(--footer-text-color);
+  color: $footerTextColor;
 }
+
 .input-footer {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -594,11 +518,11 @@ img {
   height: 50px;
   outline: none;
   resize: none;
-  background-color: var(--secondary-bcg-color);
-  border: 1px solid var(--footer-border-color);
+  background-color: $secondaryBcgColor;
+  border: 1px solid $footerBorderColor;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
 }
 
 .button.send-button {
@@ -612,11 +536,11 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
 }
 
 .send-icon {
-  fill: var(--secondary-text-color);
+  fill: $secondaryTextColor;
 }
 
 /* Page Portfolio */
@@ -632,8 +556,8 @@ img {
 
 .secondary {
   padding: 6px 22px;
-  background-color: var(--tertiary-bcg-color);
-  color: var(--title-text-color);
+  background-color: $tertiaryBcgColor;
+  color: $titleTextColor;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -642,21 +566,21 @@ img {
 
 .button.secondary:hover,
 .button.secondary:focus {
-  background: var(--accent-color);
-  color: var(--secondary-text-color);
+  background: $accentColor;
+  color: $secondaryTextColor;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: background-color 250ms var(--transition-time-function),
-    color 250ms var(--transition-time-function),
-    box-shadow 250ms var(--transition-time-function);
+  transition: background-color 250ms $transitionTimeFunction,
+    color 250ms $transitionTimeFunction,
+    box-shadow 250ms $transitionTimeFunction;
 }
 
 /* Projects */
 
 .projects {
-  background-color: var(--primary-bcg-color);
+  background-color: $primaryBcgColor;
   text-align: left;
-  transition: box-shadow 250ms var(--transition-time-function);
+  transition: box-shadow 250ms $transitionTimeFunction;
 }
 
 .projects-list {
@@ -688,12 +612,12 @@ img {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: inherit;
-  color: var(--secondary-text-color);
+  color: $secondaryTextColor;
   transform: translateY(101%);
-  transition: transform 250ms var(--transition-time-function),
-    opacity 250ms var(--transition-time-function),
-    box-shadow 250ms var(--transition-time-function);
-  background-color: var(--accent-color);
+  transition: transform 250ms $transitionTimeFunction,
+    opacity 250ms $transitionTimeFunction,
+    box-shadow 250ms $transitionTimeFunction;
+  background-color: $accentColor;
 
   opacity: 0;
 }
@@ -707,15 +631,15 @@ img {
   cursor: pointer;
   opacity: 0.9;
   transform: translateY(0);
-  transition: box-shadow 250ms var(--transition-time-function);
+  transition: box-shadow 250ms $transitionTimeFunction;
 }
 
 .projects .description {
   display: block;
   padding: 20px 24px;
-  border-bottom: 1px solid var(--projects-border-color);
-  border-left: 1px solid var(--projects-border-color);
-  border-right: 1px solid var(--projects-border-color);
+  border-bottom: 1px solid $projectsBorderColor;
+  border-left: 1px solid $projectsBorderColor;
+  border-right: 1px solid $projectsBorderColor;
 }
 
 .projects .title {
@@ -741,7 +665,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--modal-bcg-overlay-color);
+  background-color: $modalBcgOverlayColor;
 }
 
 .modal {
@@ -759,13 +683,13 @@ img {
   height: 100%;
   max-height: 581px;
   padding: 40px;
-  background-color: var(--primary-bcg-color);
+  background-color: $primaryBcgColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   opacity: 1;
-  transition: opacity 250ms var(--transition-time-function);
-  transition: transform 250ms var(--transition-time-function);
+  transition: opacity 250ms $transitionTimeFunction;
+  transition: transform 250ms $transitionTimeFunction;
 }
 
 .backdrop.is-hidden {
@@ -790,16 +714,16 @@ img {
   min-width: 30px;
   min-height: 30px;
   border-radius: 50%;
-  background-color: var(--primary-bcg-color);
-  border: 1px solid var(--modal-button-border);
+  background-color: $primaryBcgColor;
+  border: 1px solid $modalButtonBorder;
   transform: scale(1);
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-  fill: var(--accent-color);
+  fill: $accentColor;
   cursor: pointer;
-  transition: transform 250ms var(--transition-time-function);
+  transition: transform 250ms $transitionTimeFunction;
 }
 
 .modal-text {
@@ -811,7 +735,7 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: inherit;
-  color: var(--title-text-color);
+  color: $titleTextColor;
 }
 
 /* Form */
@@ -822,7 +746,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: $primaryTextColor;
 }
 
 .form-box {
@@ -835,21 +759,22 @@ img {
   height: 40px;
   padding-left: 42px;
   padding-right: 12px;
-  border: 1px solid var(--input-border-color);
+  border: 1px solid $inputBorderColor;
   border-radius: 4px;
   outline: none;
 }
 
 .form-input:focus {
-  border-color: var(--accent-color);
+  border-color: $accentColor;
   cursor: pointer;
-  transition: transform 250ms var(--transition-time-function);
+  transition: transform 250ms $transitionTimeFunction;
 }
 
-.form-input:focus + .form-icon {
-  fill: var(--accent-color);
-  transition: transform 250ms var(--transition-time-function);
+.form-input:focus+.form-icon {
+  fill: $accentColor;
+  transition: transform 250ms $transitionTimeFunction;
 }
+
 .form-icon {
   position: absolute;
   left: 12px;
@@ -865,7 +790,7 @@ img {
   height: 120px;
   resize: both;
   padding: 12px 16px;
-  border: 1px solid var(--input-border-color);
+  border: 1px solid $inputBorderColor;
   border-radius: 4px;
   outline: none;
 }
@@ -874,13 +799,13 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--form-comment-color);
+  color: $formCommentColor;
 }
 
 .form-textarea:focus {
-  border-color: var(--accent-color);
+  border-color: $accentColor;
   cursor: pointer;
-  transition: transform 250ms var(--transition-time-function);
+  transition: transform 250ms $transitionTimeFunction;
 }
 
 .form__check {
@@ -898,7 +823,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: inherit;
-  color: var(--primary-text-color);
+  color: $primaryTextColor;
 }
 
 .check__input {
@@ -908,24 +833,24 @@ img {
 }
 
 .check__icon {
-  border: 2px solid var(--title-text-color);
+  border: 2px solid $titleTextColor;
   border-radius: 4px;
   fill: transparent;
 }
 
 .check__link {
-  color: var(--accent-color);
+  color: $accentColor;
   padding-bottom: 1px;
   line-height: 1.17px;
   text-decoration: underline;
   text-underline-position: under;
 }
 
-.check__input:checked + .check__icon {
-  fill: var(--secondary-text-color);
+.check__input:checked+.check__icon {
+  fill: $secondaryTextColor;
   border: transparent;
-  background-color: var(--accent-color);
-  transition: transform 250ms var(--transition-time-function);
+  background-color: $accentColor;
+  transition: transform 250ms $transitionTimeFunction;
 }
 
 .button.primary.form-submit {
