@@ -1,5 +1,5 @@
 .form-footer {
-    display: flex;
+    @include centerFlex(flex);
     gap: 12px;
     margin-left: auto;
     justify-content: center;

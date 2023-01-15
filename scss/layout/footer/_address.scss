@@ -1,15 +1,3 @@
-// .footer .contact {
-//   @include centerFlex(block);
-
-//   margin-left: auto;
-//   min-width: 135px;
-//   color: $primaryTextColor;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-// }
-
 .address {
   margin-top: 20px;
   width: 231px;
@@ -20,7 +8,7 @@
 
   &__list {
     @extend %list;
-    display: block;
+    @include centerFlex(block);
   }
 
   &__item:not(:last-child) {

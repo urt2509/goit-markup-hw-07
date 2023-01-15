@@ -11,27 +11,28 @@
     justify-content: center;
     align-items: center;
   }
-}
 
-.clients-link {
-  display: flex;
-  flex-basis: calc((100% - 150px) / 6);
-  padding: 16px 32px;
-  width: 170px;
-  height: 92px;
-  border: 1px solid $iconText;
-  border-radius: 4px;
-  color: $iconText;
-}
+  &__link {
+    @extend %link;
+    @include centerFlex(flex);
+    flex-basis: calc((100% - 150px) / 6);
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $iconText;
+    border-radius: 4px;
+    color: $iconText;
 
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid $accentColor;
-  color: $accentColor;
-  transition: border 250ms $transitionTimeFunction,
-    color 250ms $transitionTimeFunction;
-}
+    &:hover,
+    &:focus {
+      border: 1px solid $accentColor;
+      color: $accentColor;
+      transition: border 250ms $transitionTimeFunction,
+        color 250ms $transitionTimeFunction;
+    }
+  }
 
-.clients-icon {
-  fill: currentColor;
+  &__icon {
+    fill: currentColor;
+  }
 }
