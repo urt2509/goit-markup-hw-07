@@ -1,0 +1,39 @@
+// .footer .contact {
+//   @include centerFlex(block);
+
+//   margin-left: auto;
+//   min-width: 135px;
+//   color: $primaryTextColor;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+// }
+
+.address {
+  margin-top: 20px;
+  width: 231px;
+  height: 81px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  &__list {
+    @extend %list;
+    display: block;
+  }
+
+  &__item:not(:last-child) {
+    padding-bottom: 9px;
+  }
+
+  &__link {
+    @extend %link;
+    color: $footerTextColor;
+    letter-spacing: inherit;
+  }
+
+  &__link--transition {
+    color: $secondaryTextColor;
+  }
+}

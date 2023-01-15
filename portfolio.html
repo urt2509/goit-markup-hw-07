@@ -36,9 +36,10 @@
             <nav class="site-nav">
                 <ul class="site-nav__list">
                     <li class="site-nav__item">
-                        <a href="./index.html" class="site-nav__link current">Студія</a>
+                        <a href="./index.html" class="site-nav__link">Студія</a>
                     </li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current">Портфоліо</a>
+                    </li>
                     <li class="site-nav__item">
                         <a href="" class="site-nav__link">Контакти</a>
                     </li>
@@ -243,28 +244,30 @@
             </div>
         </section>
     </main>
-    <footer class="footer-bcg">
-        <div class="container footer">
+    <footer class="footer">
+        <div class="container container-footer">
             <div>
-                <a href="./index.html" class="logo-accent link">Web<span class="logo-item">Studio</span></a>
-                <address class="contacts">
-                    <ul class="list">
-                        <li class="item"><a href="https://goo.gl/maps/v6efsquLe5E1oQyRA" target="_blank"
-                                rel="noopener noreferrer nofollow" class="contact-map link">м. Київ,
+                <a href="./index.html" class="logo">Web<span class="logo__accent">Studio</span></a>
+                <address class="address">
+                    <ul class="address__list">
+                        <li class="address__item"><a href="https://goo.gl/maps/v6efsquLe5E1oQyRA" target="_blank"
+                                rel="noopener noreferrer nofollow" class="address__link address__link--transition">м.
+                                Київ,
                                 пр-т Лесі Українки, 26</a></li>
-                        <li class="item"><a href="mailto:info@devstudio.com"
-                                class="contact accent link">info@devstudio.com</a>
+                        <li class="address__item"><a href="mailto:info@devstudio.com"
+                                class="address__link">info@devstudio.com</a>
                         </li>
-                        <li class="item"><a href="tel:+380961111111" class="contact accent link">+38 096 111 11 11</a>
+                        <li class="address__item"><a href="tel:+380961111111" class="address__link">+38 096 111 11
+                                11</a>
                         </li>
                     </ul>
                 </address>
             </div>
-            <div class="social-footer">
-                <p class="social-text">приєднуйтесь</p>
-                <ul class="list social-item">
+            <div class="icon icon-footer">
+                <p class="icon__text">приєднуйтесь</p>
+                <ul class="icon__list">
                     <li>
-                        <a href="" class="social-link">
+                        <a href="" class="icon__link icon__link--bottom">
                             <svg width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram">
                                 </use>
@@ -272,7 +275,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="social-link">
+                        <a href="" class="icon__link icon__link--bottom">
                             <svg width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter">
                                 </use>
@@ -280,7 +283,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="social-link">
+                        <a href="" class="icon__link icon__link--bottom">
                             <svg width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook">
                                 </use>
@@ -288,7 +291,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="social-link">
+                        <a href="" class="icon__link icon__link--bottom">
                             <svg width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin">
                                 </use>
@@ -298,23 +301,23 @@
                 </ul>
             </div>
 
+            <!-- Форма підвалу -->
+
             <div class="form-footer">
                 <form name="email">
-                    <div class="email-text">
-                        <label class="form-email-text" for="email">Підпишіться на розсилку</label>
+                    <div class="form-footer__text">
+                        <label class="form-footer__title" for="email">Підпишіться на розсилку</label>
                     </div>
-
-                    <div class="form-email">
-                        <input class="input-footer" type="email" name="email" id="email" placeholder="E-mail" />
+                    <div class="form-footer__field">
+                        <input class="form-footer__input" type="email" name="email" id="email" placeholder="E-mail" />
                     </div>
                 </form>
-                <button class="button send-button" type="submit">Підписатися
-                    <svg class="send-icon" width="24" height="24">
+                <button class="button button-send" type="submit">Підписатися
+                    <svg class="button-send__icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-send"></use>
                     </svg>
                 </button>
             </div>
-
         </div>
     </footer>
 </body>

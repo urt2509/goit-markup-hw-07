@@ -6,15 +6,25 @@
 @import './layout/page-header/page-header';
 @import './components/logo';
 @import './layout/page-header/site-nav';
-@import './layout/page-header/address';
+@import './layout/page-header/header-contact';
 @import './layout/hero';
 @import './components/button';
+@import './components/backdrop';
+
 @import './layout/features';
 @import './components/heading';
 @import './layout/work';
 @import './layout/team';
-@import './components/social-icon';
+@import './components/icon';
 
 @import './layout/clients';
 
 @import './layout/footer/footer';
+@import './layout/footer/address';
+@import './layout/footer/form-footer';
+
+
+@import './components/modal';
+@import './components/form';
+@import './components/textarea';
+@import './components/checkform';

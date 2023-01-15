@@ -401,7 +401,7 @@
 
 /* Footer */
 
-.footer-bcg {
+/* .footer-bcg {
   background-color: $secondaryBcgColor;
 }
 
@@ -463,27 +463,27 @@
 .contact.accent {
   color: $footerTextColor;
   letter-spacing: inherit;
-}
+} */
 
 /* Social */
 
-.social-footer {
+/* .social-footer {
   margin-left: 70px;
   color: $secondaryTextColor;
-}
+} */
 
-.social-text {
+/* .social-text {
   margin-bottom: 20px;
   text-transform: uppercase;
-}
+} */
 
-.social-footer .social-link {
+/* .social-footer .social-link {
   fill: $secondaryTextColor;
-}
+} */
 
 /* Form footer Email input */
 
-.form-footer {
+/* .form-footer {
   display: flex;
   gap: 12px;
   margin-left: auto;
@@ -523,9 +523,9 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: $secondaryTextColor;
-}
+} */
 
-.button.send-button {
+/* .button.send-button {
   display: flex;
   gap: 10px;
   width: 200px;
@@ -537,11 +537,11 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: $secondaryTextColor;
-}
+} */
 
-.send-icon {
+/* .send-icon {
   fill: $secondaryTextColor;
-}
+} */
 
 /* Page Portfolio */
 
@@ -659,16 +659,16 @@
 
 /* Modal windows */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: $modalBcgOverlayColor;
-}
+} */
 
-.modal {
+/* .modal {
   display: flex;
   height: 100%;
   justify-content: center;
@@ -690,9 +690,9 @@
   opacity: 1;
   transition: opacity 250ms $transitionTimeFunction;
   transition: transform 250ms $transitionTimeFunction;
-}
+} */
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -701,9 +701,9 @@
 
 .backdrop.is-hidden .modal {
   transform: scale(0.5);
-}
+} */
 
-.modal-btn {
+/* .modal-btn {
   position: absolute;
   display: flex;
   top: 8px;
@@ -736,11 +736,11 @@
   text-align: center;
   letter-spacing: inherit;
   color: $titleTextColor;
-}
+} */
 
 /* Form */
 
-.form-label {
+/* .form-label {
   height: 14px;
   margin-bottom: 4px;
   font-size: 12px;
@@ -779,9 +779,9 @@
   position: absolute;
   left: 12px;
   transform: translateY(50%);
-}
+} */
 
-.textarea {
+/* .textarea {
   margin-bottom: 20px;
 }
 
@@ -806,9 +806,9 @@
   border-color: $accentColor;
   cursor: pointer;
   transition: transform 250ms $transitionTimeFunction;
-}
+} */
 
-.form__check {
+/* .form__check {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -851,9 +851,9 @@
   border: transparent;
   background-color: $accentColor;
   transition: transform 250ms $transitionTimeFunction;
-}
+} */
 
-.button.primary.form-submit {
+/* .button.primary.form-submit {
   display: block;
   margin: 0 auto;
-}
+} */
